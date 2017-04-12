@@ -115,7 +115,7 @@
       dialog.dialog( "open" );
     });
 
-    if(Cookies.get('hasJoinList') === 'undefined') {
+    if(!!Cookies.get('hasJoinList')) {
        dialog.dialog( "open" );
     }else{
       alert("time to make some cookies");
