@@ -115,9 +115,11 @@
       dialog.dialog( "open" );
     });
 
-    if(Cookies.get('hasJoinList') == 'undefined') {
+    if(Cookies.get('hasJoinList') === 'undefined') {
        dialog.dialog( "open" );
     };
+    
+    alert(Cookies.get('hasJoinList'));
 
 
   } );
