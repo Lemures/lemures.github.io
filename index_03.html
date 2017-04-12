@@ -115,10 +115,10 @@
       dialog.dialog( "open" );
     });
 
-    if(!!Cookies.get('hasJoinList')) {
-       alert(Cookies.get('hasJointList'));
+    if(!Cookies.get('hasJoinList')) {
+      dialog.dialog( "open" );
     }else{
-     dialog.dialog( "open" );
+      alert(Cookie.get('hasJoinList'));
     };
     
 
