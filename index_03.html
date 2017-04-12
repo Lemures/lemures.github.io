@@ -79,7 +79,7 @@
       valid = valid && checkRegexp( email, emailRegex, "eg. ui@jquery.com" );
 
       if ( valid ) {
-        Cookies.set('hasJoinList', '1' , {expires: 365});
+        Cookies.set('hasJoinList', 1 , {expires: 365});
         $( "#users tbody" ).append( "<tr>" +
           "<td>" + name.val() + "</td>" +
           "<td>" + email.val() + "</td>" +
